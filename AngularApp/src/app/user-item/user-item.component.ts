@@ -6,13 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-item.component.css']
 })
 export class UserItemComponent implements OnInit {
-  name: string;
+  private name;
 
   constructor() {
-    this.name = 'Srinath';
+    this.name = this.getGreeting();
    }
 
   ngOnInit() {
+  }
+
+  getGreeting(){
+    return "Srinath using Interpolation and Method calling!";
   }
 
 }
