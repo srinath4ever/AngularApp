@@ -1,3 +1,5 @@
-<ul>
-  <li *ngFor="let name of names">Hello {{name}}</li>
-</ul>
+<div>
+  <h4 *ngFor="let name of names; index as i">{{i+1}} {{name}}</h4>
+</div>
+<h3>{{inMessage}}</h3>
+<button (click)="sendParent()">Parent</button>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-users',
@@ -6,13 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
-  names: string[];
+
+  private names;
+  @Input('incomingMessage') private inMessage;
+  @Output() private outMessageEvent = new EventEmitter();
 
   constructor() { 
     this.names = ['shubha', 'sathish', 'ramesh', 'mahesh'];
   }
 
   ngOnInit() {
+  }
+
+  sendParent(){
+    this.outMessageEvent.emit("You are my Parent!");
   }
 
 }
