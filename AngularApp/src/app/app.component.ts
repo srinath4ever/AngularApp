@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+// this is to demo parent and child relationships
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

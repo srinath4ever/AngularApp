@@ -1,4 +1,5 @@
 <div style="text-align:center">
+  
   <h2>
     Welcome to {{ title }}
   </h2>
@@ -7,7 +8,7 @@
 
   <user-item></user-item>
 
-  <app-users (outMessageEvent)="messageReceived=$event" [incomingMessage]="childMessage"></app-users>
+  <app-users (outMessageEvent)="messageReceived=$event.key" [incomingMessage]="childMessage"></app-users>
 
   <h3>
     {{messageReceived}}
