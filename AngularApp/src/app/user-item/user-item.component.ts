@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+//ngif, ngswitch, ngswitchcase examples
 @Component({
   selector: 'user-item',
   templateUrl: './user-item.component.html',

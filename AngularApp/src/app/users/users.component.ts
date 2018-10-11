@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { EmployeeService } from '../services/employee.service';
 
 //this is to demo parent and child relationships
 //also ngFor iteration
@@ -14,8 +15,9 @@ export class UsersComponent implements OnInit {
   @Output() private outMessageEvent = new EventEmitter();
   private jsonObject;
 
-  constructor() { 
-    this.names = ['shubha', 'sathish', 'ramesh', 'mahesh'];
+  constructor(private _employeeService: EmployeeService) {
+    //this.names = ['shubha', 'sathish', 'ramesh', 'mahesh'];
+    this.names = _employeeService.getEmployees();
   }
 
   ngOnInit() {
