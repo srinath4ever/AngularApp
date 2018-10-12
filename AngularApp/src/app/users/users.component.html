@@ -1,5 +1,9 @@
 <div>
-  <h4 *ngFor="let name of names; index as i">{{i+1}} {{name.name}}</h4>
+  <h4 *ngFor="let name of names; index as i">{{i+1}} {{name.name}} {{name.age}}</h4>
 </div>
 <h3>{{inMessage}}</h3>
 <button (click)="sendParent()">Parent</button>
+
+<p>
+    {{errorMessage}}
+</p>

@@ -10,6 +10,7 @@ import { DetailsComponent } from './details/details.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { UserItemComponent } from './user-item/user-item.component';
 import { EmployeeService } from './services/employee.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { EmployeeService } from './services/employee.service';
   ],
   imports: [
     BrowserModule, 
-    FormsModule
+    FormsModule,
+    HttpClientModule //to use http module
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

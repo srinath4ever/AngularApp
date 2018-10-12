@@ -10,20 +10,24 @@ import { EmployeeService } from '../services/employee.service';
 })
 export class UsersComponent implements OnInit {
 
-  private names;
+  //declaring an empty array for reading from service
+  private names = [];
+  private errorMessage;
+
   @Input('incomingMessage') private inMessage;
   @Output() private outMessageEvent = new EventEmitter();
   private jsonObject;
 
   constructor(private _employeeService: EmployeeService) {
-    //this.names = ['shubha', 'sathish', 'ramesh', 'mahesh'];
-    this.names = _employeeService.getEmployees();
   }
 
   ngOnInit() {
+    this._employeeService.getEmployees() //returns an observable
+      .subscribe(data => this.names = data,
+        error => this.errorMessage = error);
   }
 
-  sendParent(){
+  sendParent() {
     this.jsonObject = {
       "key": "You are my Parent!"
     };
