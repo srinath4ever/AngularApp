@@ -1,17 +1,24 @@
-<div style="text-align:center">
+<div>
   
   <h2>
     Welcome to {{ title }}
   </h2>
 
+<!--
   <hello-world></hello-world>
-
   <user-item></user-item>
-
   <app-users (outMessageEvent)="messageReceived=$event.key" [incomingMessage]="childMessage"></app-users>
-
   <h3>
     {{messageReceived}}
-</h3>
+  </h3>
+-->
+
+<nav>
+  <a routerLink="/departments" routerLinkActive="active">Departments</a>
+  <a routerLink="/employees" routerLinkActive="active">Employees</a>
+</nav>
+
+<!--router view goes here-->
+<router-outlet></router-outlet>
 
 </div>
