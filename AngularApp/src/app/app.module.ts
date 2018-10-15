@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DepartmentDetailsComponent } from './department-details/department-details.component';
+import { DepartmentOverviewComponent } from './department-overview/department-overview.component';
+import { DepartmentContactComponent } from './department-contact/department-contact.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { DepartmentDetailsComponent } from './department-details/department-deta
     UserItemComponent,
     routingComponents,
     PageNotFoundComponent,
-    DepartmentDetailsComponent
+    DepartmentDetailsComponent,
+    DepartmentOverviewComponent,
+    DepartmentContactComponent
   ],
   imports: [
     BrowserModule, 
