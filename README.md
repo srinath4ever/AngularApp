@@ -1,3 +1,3 @@
 # AngularApp
 
-Angular 6 App - Exploring the new features.
+Angular 6 App - Exploring new features.
