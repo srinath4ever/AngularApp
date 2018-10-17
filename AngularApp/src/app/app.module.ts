@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PostsComponent } from './posts/posts.component';
 import { UsersComponent } from './users/users.component';
-import { DetailsComponent } from './details/details.component';
+import { BootcampFormComponent } from './bootcamp-form/bootcamp-form.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { UserItemComponent } from './user-item/user-item.component';
 import { EmployeeService } from './services/employee.service';
@@ -16,6 +16,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { DepartmentDetailsComponent } from './department-details/department-details.component';
 import { DepartmentOverviewComponent } from './department-overview/department-overview.component';
 import { DepartmentContactComponent } from './department-contact/department-contact.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +24,15 @@ import { DepartmentContactComponent } from './department-contact/department-cont
     SidebarComponent,
     PostsComponent,
     UsersComponent,
-    DetailsComponent,
+    BootcampFormComponent,
     HelloWorldComponent,
     UserItemComponent,
     routingComponents,
     PageNotFoundComponent,
     DepartmentDetailsComponent,
     DepartmentOverviewComponent,
-    DepartmentContactComponent
+    DepartmentContactComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule, 

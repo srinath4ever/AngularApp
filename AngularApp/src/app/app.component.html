@@ -1,24 +1,19 @@
-<div>
-  
+<div class="container-fluid">
+
   <h2>
     Welcome to {{ title }}
   </h2>
 
-<!--
+  <!--
   <hello-world></hello-world>
   <user-item></user-item>
   <app-users (outMessageEvent)="messageReceived=$event.key" [incomingMessage]="childMessage"></app-users>
   <h3>
     {{messageReceived}}
   </h3>
--->
+  -->
 
-<nav>
-  <a routerLink="/departments" routerLinkActive="active">Departments</a>
-  <a routerLink="/employees" routerLinkActive="active">Employees</a>
-</nav>
-
-<!--routing happens here: router view goes here-->
-<router-outlet></router-outlet>
+  <!--routing happens here: router view goes here-->
+  <router-outlet></router-outlet>
 
 </div>
