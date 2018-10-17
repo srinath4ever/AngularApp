@@ -6,9 +6,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { DepartmentDetailsComponent } from './department-details/department-details.component';
 import { DepartmentOverviewComponent } from './department-overview/department-overview.component';
 import { DepartmentContactComponent } from './department-contact/department-contact.component';
+import { BootcampFormComponent } from './bootcamp-form/bootcamp-form.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/departments', pathMatch: 'full' }, //defaulting
+    { path: '', redirectTo: '/home', pathMatch: 'full' }, //defaulting
+    { path: 'home', component: HomeComponent },
     { path: 'departments', component: DepartmentListComponent },
     { path: 'employees', component: EmployeeListComponent },
     { path: 'departments/:id', component: DepartmentDetailsComponent,
@@ -17,6 +20,7 @@ const routes: Routes = [
             { path: 'contact', component: DepartmentContactComponent }
         ]
     },
+    { path: 'bootcamp-form', component: BootcampFormComponent },
     { path: "**", component: PageNotFoundComponent} //for page not found or default
 ]; 
 
