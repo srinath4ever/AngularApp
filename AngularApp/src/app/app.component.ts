@@ -9,14 +9,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  private childMessage = "You are child!";
+  private childMessage = 'You are child!';
   private messageReceived;
   title = 'AngularApp 6!';
 
-  userModel = new User("srinath", "naath.r@gmail.com", 9916000000, "Angular", "morning", false);
-
-  constructor(private router: Router){
-
-  }
+  constructor(private router: Router) {  }
 
 }

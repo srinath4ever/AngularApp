@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  goToBootCamp(){
+  goToBootCamp() {
     this.router.navigate(['/bootcamp-form']);
   }
 
